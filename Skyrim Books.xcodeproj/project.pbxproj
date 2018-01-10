@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		552FD35181B19E5228D89BF8 /* Pods_Skyrim_Books.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB4B95C57E9BFF412258BBA /* Pods_Skyrim_Books.framework */; };
+		950329671F1B4A7E009978BE /* BookDownloadProgresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950329661F1B4A7E009978BE /* BookDownloadProgresViewController.swift */; };
+		9527A6761F29A7DA009CEEF1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9527A6751F29A7DA009CEEF1 /* SettingsViewController.swift */; };
+		9527A67A1F29AC1D009CEEF1 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9527A6791F29AC1D009CEEF1 /* SearchTableViewController.swift */; };
+		958185341F1897FF008CC543 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9596338D1F17BFEC00BC8D42 /* libxml2.2.dylib */; };
+		958BB6E41F18E0820012816D /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958BB6E31F18E0820012816D /* Book.swift */; };
+		958BB6E61F18EFEE0012816D /* Bookshell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958BB6E51F18EFEE0012816D /* Bookshell.swift */; };
+		958BB6E81F18FD1B0012816D /* BookChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958BB6E71F18FD1B0012816D /* BookChapter.swift */; };
+		95A409F51F1A47480088CC45 /* BookshellTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A409F41F1A47480088CC45 /* BookshellTableViewController.swift */; };
+		95A409FB1F1A4AFF0088CC45 /* BookshellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A409FA1F1A4AFF0088CC45 /* BookshellTableViewCell.swift */; };
+		95A409FE1F1AAF5E0088CC45 /* DownloadServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A409FD1F1AAF5E0088CC45 /* DownloadServiceDelegate.swift */; };
+		95AF5C8E1F35894E00A89E1D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AF5C8D1F35894E00A89E1D /* Logger.swift */; };
+		95C3D5281F2879A2004E9A7C /* RecentlyReadQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C3D5271F2879A2004E9A7C /* RecentlyReadQueue.swift */; };
+		95DC14DC1F18A2510096D86D /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DC14DB1F18A2510096D86D /* Kanna.framework */; };
+		95E058EE1F233B3F0092EA88 /* BookshellFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E058ED1F233B3F0092EA88 /* BookshellFooterView.swift */; };
+		95E058F01F234E6D0092EA88 /* FavoriteBookshellTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E058EF1F234E6D0092EA88 /* FavoriteBookshellTableViewController.swift */; };
+		95E058F21F234E830092EA88 /* RecentBookshellTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E058F11F234E830092EA88 /* RecentBookshellTableViewController.swift */; };
+		95E058F91F23FC430092EA88 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E058F81F23FC430092EA88 /* BookViewController.swift */; };
+		95E56FB81F31D3EA0046316C /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E56FB71F31D3EA0046316C /* AppTheme.swift */; };
+		95F3A4BE1F17774B00BADBD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F3A4BD1F17774B00BADBD9 /* AppDelegate.swift */; };
+		95F3A4C31F17774B00BADBD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F3A4C11F17774B00BADBD9 /* Main.storyboard */; };
+		95F3A4C51F17774B00BADBD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F3A4C41F17774B00BADBD9 /* Assets.xcassets */; };
+		95F3A4C81F17774B00BADBD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F3A4C61F17774B00BADBD9 /* LaunchScreen.storyboard */; };
+		95F3A4D31F17774B00BADBD9 /* Skyrim_BooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F3A4D21F17774B00BADBD9 /* Skyrim_BooksTests.swift */; };
+		95F3A4DE1F1779CD00BADBD9 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F3A4DD1F1779CD00BADBD9 /* DownloadService.swift */; };
+		D03400CCB5F05E2FBA0ACA59 /* Pods_Skyrim_BooksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CBC1CDE29B9DC7968494BD /* Pods_Skyrim_BooksTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95F3A4CF1F17774B00BADBD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95F3A4B21F17774B00BADBD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95F3A4B91F17774B00BADBD9;
+			remoteInfo = "Skyrim Books";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F546210D7CC07E76918E970 /* Pods-Skyrim Books.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skyrim Books.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Skyrim Books/Pods-Skyrim Books.debug.xcconfig"; sourceTree = "<group>"; };
+		5CC052A7B606B95BEB2B1F69 /* Pods-Skyrim Books.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skyrim Books.release.xcconfig"; path = "Pods/Target Support Files/Pods-Skyrim Books/Pods-Skyrim Books.release.xcconfig"; sourceTree = "<group>"; };
+		950329661F1B4A7E009978BE /* BookDownloadProgresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDownloadProgresViewController.swift; sourceTree = "<group>"; };
+		9527A6751F29A7DA009CEEF1 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9527A6791F29AC1D009CEEF1 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		958BB6E31F18E0820012816D /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		958BB6E51F18EFEE0012816D /* Bookshell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bookshell.swift; path = ../Bookshell.swift; sourceTree = "<group>"; };
+		958BB6E71F18FD1B0012816D /* BookChapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookChapter.swift; sourceTree = "<group>"; };
+		9596338D1F17BFEC00BC8D42 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = ../../../../../../../usr/lib/libxml2.2.dylib; sourceTree = "<group>"; };
+		95A409F41F1A47480088CC45 /* BookshellTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookshellTableViewController.swift; sourceTree = "<group>"; };
+		95A409FA1F1A4AFF0088CC45 /* BookshellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookshellTableViewCell.swift; sourceTree = "<group>"; };
+		95A409FD1F1AAF5E0088CC45 /* DownloadServiceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadServiceDelegate.swift; sourceTree = "<group>"; };
+		95AF5C8D1F35894E00A89E1D /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		95BF2D671F179ABC00D37108 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		95BF2D691F179AC500D37108 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		95C3D5271F2879A2004E9A7C /* RecentlyReadQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentlyReadQueue.swift; sourceTree = "<group>"; };
+		95DC14DB1F18A2510096D86D /* Kanna.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kanna.framework; path = ../../../Desktop/Frameworks/Kanna.framework; sourceTree = "<group>"; };
+		95E058ED1F233B3F0092EA88 /* BookshellFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookshellFooterView.swift; sourceTree = "<group>"; };
+		95E058EF1F234E6D0092EA88 /* FavoriteBookshellTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteBookshellTableViewController.swift; sourceTree = "<group>"; };
+		95E058F11F234E830092EA88 /* RecentBookshellTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentBookshellTableViewController.swift; sourceTree = "<group>"; };
+		95E058F81F23FC430092EA88 /* BookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		95E56FB71F31D3EA0046316C /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		95F3A4BA1F17774B00BADBD9 /* Skyrim Books.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skyrim Books.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95F3A4BD1F17774B00BADBD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95F3A4C21F17774B00BADBD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95F3A4C41F17774B00BADBD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95F3A4C71F17774B00BADBD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95F3A4C91F17774B00BADBD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95F3A4CE1F17774B00BADBD9 /* Skyrim BooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Skyrim BooksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95F3A4D21F17774B00BADBD9 /* Skyrim_BooksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skyrim_BooksTests.swift; sourceTree = "<group>"; };
+		95F3A4D41F17774B00BADBD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95F3A4DD1F1779CD00BADBD9 /* DownloadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		9DB4B95C57E9BFF412258BBA /* Pods_Skyrim_Books.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skyrim_Books.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5CBC1CDE29B9DC7968494BD /* Pods_Skyrim_BooksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skyrim_BooksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA050B5A66A301C1513F5E1C /* Pods-Skyrim BooksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skyrim BooksTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Skyrim BooksTests/Pods-Skyrim BooksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB1A7440DE6232C78CED26A8 /* Pods-Skyrim BooksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skyrim BooksTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Skyrim BooksTests/Pods-Skyrim BooksTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95F3A4B71F17774B00BADBD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95DC14DC1F18A2510096D86D /* Kanna.framework in Frameworks */,
+				958185341F1897FF008CC543 /* libxml2.2.dylib in Frameworks */,
+				552FD35181B19E5228D89BF8 /* Pods_Skyrim_Books.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95F3A4CB1F17774B00BADBD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D03400CCB5F05E2FBA0ACA59 /* Pods_Skyrim_BooksTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FE85D602F49A6AEE18607A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F546210D7CC07E76918E970 /* Pods-Skyrim Books.debug.xcconfig */,
+				5CC052A7B606B95BEB2B1F69 /* Pods-Skyrim Books.release.xcconfig */,
+				BA050B5A66A301C1513F5E1C /* Pods-Skyrim BooksTests.debug.xcconfig */,
+				EB1A7440DE6232C78CED26A8 /* Pods-Skyrim BooksTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95A409F61F1A47BB0088CC45 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				95A409F41F1A47480088CC45 /* BookshellTableViewController.swift */,
+				95F3A4BD1F17774B00BADBD9 /* AppDelegate.swift */,
+				95A409FA1F1A4AFF0088CC45 /* BookshellTableViewCell.swift */,
+				950329661F1B4A7E009978BE /* BookDownloadProgresViewController.swift */,
+				95E058EF1F234E6D0092EA88 /* FavoriteBookshellTableViewController.swift */,
+				95E058F11F234E830092EA88 /* RecentBookshellTableViewController.swift */,
+				95E058F81F23FC430092EA88 /* BookViewController.swift */,
+				9527A6751F29A7DA009CEEF1 /* SettingsViewController.swift */,
+				9527A6791F29AC1D009CEEF1 /* SearchTableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		95A409F71F1A47C80088CC45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				958BB6E31F18E0820012816D /* Book.swift */,
+				958BB6E51F18EFEE0012816D /* Bookshell.swift */,
+				958BB6E71F18FD1B0012816D /* BookChapter.swift */,
+				95C3D5271F2879A2004E9A7C /* RecentlyReadQueue.swift */,
+				95E56FB71F31D3EA0046316C /* AppTheme.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		95A409FC1F1AAF430088CC45 /* DownloadService */ = {
+			isa = PBXGroup;
+			children = (
+				95F3A4DD1F1779CD00BADBD9 /* DownloadService.swift */,
+				95A409FD1F1AAF5E0088CC45 /* DownloadServiceDelegate.swift */,
+			);
+			name = DownloadService;
+			sourceTree = "<group>";
+		};
+		95AF5C8C1F35893F00A89E1D /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				95AF5C8D1F35894E00A89E1D /* Logger.swift */,
+			);
+			name = Log;
+			sourceTree = "<group>";
+		};
+		95BF2D661F179ABC00D37108 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95DC14DB1F18A2510096D86D /* Kanna.framework */,
+				9596338D1F17BFEC00BC8D42 /* libxml2.2.dylib */,
+				95BF2D691F179AC500D37108 /* libxml2.tbd */,
+				95BF2D671F179ABC00D37108 /* libxml2.2.tbd */,
+				9DB4B95C57E9BFF412258BBA /* Pods_Skyrim_Books.framework */,
+				B5CBC1CDE29B9DC7968494BD /* Pods_Skyrim_BooksTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95E058EC1F233B260092EA88 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				95E058ED1F233B3F0092EA88 /* BookshellFooterView.swift */,
+			);
+			name = Footer;
+			sourceTree = "<group>";
+		};
+		95F3A4B11F17774B00BADBD9 = {
+			isa = PBXGroup;
+			children = (
+				95F3A4BC1F17774B00BADBD9 /* Skyrim Books */,
+				95F3A4D11F17774B00BADBD9 /* Skyrim BooksTests */,
+				95F3A4BB1F17774B00BADBD9 /* Products */,
+				95BF2D661F179ABC00D37108 /* Frameworks */,
+				5FE85D602F49A6AEE18607A6 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		95F3A4BB1F17774B00BADBD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95F3A4BA1F17774B00BADBD9 /* Skyrim Books.app */,
+				95F3A4CE1F17774B00BADBD9 /* Skyrim BooksTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95F3A4BC1F17774B00BADBD9 /* Skyrim Books */ = {
+			isa = PBXGroup;
+			children = (
+				95AF5C8C1F35893F00A89E1D /* Log */,
+				95E058EC1F233B260092EA88 /* Footer */,
+				95A409FC1F1AAF430088CC45 /* DownloadService */,
+				95A409F71F1A47C80088CC45 /* Models */,
+				95A409F61F1A47BB0088CC45 /* ViewControllers */,
+				95F3A4C11F17774B00BADBD9 /* Main.storyboard */,
+				95F3A4C41F17774B00BADBD9 /* Assets.xcassets */,
+				95F3A4C61F17774B00BADBD9 /* LaunchScreen.storyboard */,
+				95F3A4C91F17774B00BADBD9 /* Info.plist */,
+			);
+			path = "Skyrim Books";
+			sourceTree = "<group>";
+		};
+		95F3A4D11F17774B00BADBD9 /* Skyrim BooksTests */ = {
+			isa = PBXGroup;
+			children = (
+				95F3A4D21F17774B00BADBD9 /* Skyrim_BooksTests.swift */,
+				95F3A4D41F17774B00BADBD9 /* Info.plist */,
+			);
+			path = "Skyrim BooksTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		95DC14AF1F189EBE0096D86D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		95F3A4B91F17774B00BADBD9 /* Skyrim Books */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95F3A4D71F17774B00BADBD9 /* Build configuration list for PBXNativeTarget "Skyrim Books" */;
+			buildPhases = (
+				7657B6FFF7C03742CFF2AA83 /* [CP] Check Pods Manifest.lock */,
+				95F3A4B61F17774B00BADBD9 /* Sources */,
+				95F3A4B71F17774B00BADBD9 /* Frameworks */,
+				95F3A4B81F17774B00BADBD9 /* Resources */,
+				95DC14AF1F189EBE0096D86D /* Headers */,
+				E2C28629C5B4E082656A1A7F /* [CP] Embed Pods Frameworks */,
+				3A017C527071E77B4EB62D98 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Skyrim Books";
+			productName = "Skyrim Books";
+			productReference = 95F3A4BA1F17774B00BADBD9 /* Skyrim Books.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95F3A4CD1F17774B00BADBD9 /* Skyrim BooksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95F3A4DA1F17774B00BADBD9 /* Build configuration list for PBXNativeTarget "Skyrim BooksTests" */;
+			buildPhases = (
+				D2815D808592ACFCC6C91024 /* [CP] Check Pods Manifest.lock */,
+				95F3A4CA1F17774B00BADBD9 /* Sources */,
+				95F3A4CB1F17774B00BADBD9 /* Frameworks */,
+				95F3A4CC1F17774B00BADBD9 /* Resources */,
+				F121A2EA91F326C85C205304 /* [CP] Embed Pods Frameworks */,
+				4D4B3F2110147BE8650F8A05 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95F3A4D01F17774B00BADBD9 /* PBXTargetDependency */,
+			);
+			name = "Skyrim BooksTests";
+			productName = "Skyrim BooksTests";
+			productReference = 95F3A4CE1F17774B00BADBD9 /* Skyrim BooksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95F3A4B21F17774B00BADBD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Çağrı Yıldız";
+				TargetAttributes = {
+					95F3A4B91F17774B00BADBD9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					95F3A4CD1F17774B00BADBD9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 95F3A4B91F17774B00BADBD9;
+					};
+				};
+			};
+			buildConfigurationList = 95F3A4B51F17774B00BADBD9 /* Build configuration list for PBXProject "Skyrim Books" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95F3A4B11F17774B00BADBD9;
+			productRefGroup = 95F3A4BB1F17774B00BADBD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95F3A4B91F17774B00BADBD9 /* Skyrim Books */,
+				95F3A4CD1F17774B00BADBD9 /* Skyrim BooksTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95F3A4B81F17774B00BADBD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F3A4C81F17774B00BADBD9 /* LaunchScreen.storyboard in Resources */,
+				95F3A4C51F17774B00BADBD9 /* Assets.xcassets in Resources */,
+				95F3A4C31F17774B00BADBD9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95F3A4CC1F17774B00BADBD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A017C527071E77B4EB62D98 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Skyrim Books/Pods-Skyrim Books-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D4B3F2110147BE8650F8A05 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Skyrim BooksTests/Pods-Skyrim BooksTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7657B6FFF7C03742CFF2AA83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D2815D808592ACFCC6C91024 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2C28629C5B4E082656A1A7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Skyrim Books/Pods-Skyrim Books-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F121A2EA91F326C85C205304 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Skyrim BooksTests/Pods-Skyrim BooksTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95F3A4B61F17774B00BADBD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E56FB81F31D3EA0046316C /* AppTheme.swift in Sources */,
+				95A409FE1F1AAF5E0088CC45 /* DownloadServiceDelegate.swift in Sources */,
+				95C3D5281F2879A2004E9A7C /* RecentlyReadQueue.swift in Sources */,
+				95E058EE1F233B3F0092EA88 /* BookshellFooterView.swift in Sources */,
+				958BB6E81F18FD1B0012816D /* BookChapter.swift in Sources */,
+				958BB6E41F18E0820012816D /* Book.swift in Sources */,
+				95E058F21F234E830092EA88 /* RecentBookshellTableViewController.swift in Sources */,
+				958BB6E61F18EFEE0012816D /* Bookshell.swift in Sources */,
+				9527A67A1F29AC1D009CEEF1 /* SearchTableViewController.swift in Sources */,
+				95A409F51F1A47480088CC45 /* BookshellTableViewController.swift in Sources */,
+				9527A6761F29A7DA009CEEF1 /* SettingsViewController.swift in Sources */,
+				95F3A4BE1F17774B00BADBD9 /* AppDelegate.swift in Sources */,
+				95F3A4DE1F1779CD00BADBD9 /* DownloadService.swift in Sources */,
+				95AF5C8E1F35894E00A89E1D /* Logger.swift in Sources */,
+				95E058F01F234E6D0092EA88 /* FavoriteBookshellTableViewController.swift in Sources */,
+				95E058F91F23FC430092EA88 /* BookViewController.swift in Sources */,
+				95A409FB1F1A4AFF0088CC45 /* BookshellTableViewCell.swift in Sources */,
+				950329671F1B4A7E009978BE /* BookDownloadProgresViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95F3A4CA1F17774B00BADBD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F3A4D31F17774B00BADBD9 /* Skyrim_BooksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95F3A4D01F17774B00BADBD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95F3A4B91F17774B00BADBD9 /* Skyrim Books */;
+			targetProxy = 95F3A4CF1F17774B00BADBD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95F3A4C11F17774B00BADBD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95F3A4C21F17774B00BADBD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95F3A4C61F17774B00BADBD9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95F3A4C71F17774B00BADBD9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95F3A4D51F17774B00BADBD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95F3A4D61F17774B00BADBD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95F3A4D81F17774B00BADBD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F546210D7CC07E76918E970 /* Pods-Skyrim Books.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = MQ3RC73AVX;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Skyrim Books/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.polinominom.bookapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		95F3A4D91F17774B00BADBD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CC052A7B606B95BEB2B1F69 /* Pods-Skyrim Books.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = MQ3RC73AVX;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Skyrim Books/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.polinominom.bookapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		95F3A4DB1F17774B00BADBD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA050B5A66A301C1513F5E1C /* Pods-Skyrim BooksTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MQ3RC73AVX;
+				INFOPLIST_FILE = "Skyrim BooksTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.polinominom.Skyrim-BooksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skyrim Books.app/Skyrim Books";
+			};
+			name = Debug;
+		};
+		95F3A4DC1F17774B00BADBD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB1A7440DE6232C78CED26A8 /* Pods-Skyrim BooksTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MQ3RC73AVX;
+				INFOPLIST_FILE = "Skyrim BooksTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.polinominom.Skyrim-BooksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skyrim Books.app/Skyrim Books";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95F3A4B51F17774B00BADBD9 /* Build configuration list for PBXProject "Skyrim Books" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F3A4D51F17774B00BADBD9 /* Debug */,
+				95F3A4D61F17774B00BADBD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95F3A4D71F17774B00BADBD9 /* Build configuration list for PBXNativeTarget "Skyrim Books" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F3A4D81F17774B00BADBD9 /* Debug */,
+				95F3A4D91F17774B00BADBD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95F3A4DA1F17774B00BADBD9 /* Build configuration list for PBXNativeTarget "Skyrim BooksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F3A4DB1F17774B00BADBD9 /* Debug */,
+				95F3A4DC1F17774B00BADBD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95F3A4B21F17774B00BADBD9 /* Project object */;
+}
